@@ -1,0 +1,9 @@
+def calcular_precio_con_iva(precio_sin_iva):
+    iva = precio_sin_iva * 0.15
+    precio_con_iva = precio_sin_iva + iva
+    return precio_con_iva
+
+# Ejemplo de uso
+precio_sin_iva = float(input("Introduce el precio sin IVA: "))
+precio_con_iva = calcular_precio_con_iva(precio_sin_iva)
+print(f"El precio con IVA incluido es: {precio_con_iva}")
